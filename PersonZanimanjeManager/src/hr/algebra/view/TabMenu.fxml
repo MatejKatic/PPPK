@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.TabMenuController">
+      <tabs>
+        <Tab fx:id="tabPeople" text="List People">
+            <content>
+                <fx:include fx:id="listPeopleTab" source="ListPeople.fxml" />
+            </content>
+        </Tab>
+        <Tab fx:id="tabAddPerson" text="Add Person">
+            <content>
+                <fx:include fx:id="addPersonTab" source="AddPerson.fxml" />
+            </content>
+        </Tab>
+        <Tab fx:id="tabZanimanja" text="Zanimanja">
+            <content>
+                <fx:include fx:id="listZanimanja" source="ListZanimanjes.fxml" />
+            </content>
+        </Tab>
+        <Tab fx:id="tabAddZanimanje" text="Add Zanimanje">
+            <content>
+                <fx:include fx:id="addZanimanja" source="AddZanimanje.fxml" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
